@@ -159,7 +159,7 @@ img{
     min-height: 600px;
     grid-template-columns: repeat(4,1fr);
     margin: 0 auto;
-    gap: 10px;
+    gap: 5px;
     
 
 }
@@ -174,6 +174,48 @@ img{
 .des-card{
     color: #534c64;
     font-size: 15px;
+}
+.goon{
+    background: linear-gradient(#f958b2, #8758f1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.des-download{
+    font-size: 15px;
+    width: 350px;
+}
+.ondownload-container{
+    max-width: 1000px;
+    display: flex;
+    height: 300px;
+    margin: 0 auto;
+}
+.text-container{
+    width: 50%;
+}
+.text-box{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+.download-image{
+    position: relative;
+    width: 50%;
+}
+.download-img{
+    width: 100%;
+}
+.sh-pic{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+
+    
+}
+.short-pic{
+    width: 100%;
 }
 
 
