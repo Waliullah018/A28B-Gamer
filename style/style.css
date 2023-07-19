@@ -27,6 +27,9 @@
     font-weight: 700;
     color: #0B0223;
 }
+.tictok{
+    color: #0B0223;
+}
 .one{
     font-size: 48px;
     font-weight: 700;
@@ -398,6 +401,17 @@ img{
     .Gamer-Container{
         justify-content: space-evenly;
     }
+    .btn-f{
+        width: 150px;
+        font-size: 10px;
+        padding: 10px 2px;
+    }
+    .Gamer-Container{
+        gap: 30px;
+    }
+    .content{
+        height: 72%;
+    }
 }
 
 @media screen and (max-width:426px) {
@@ -480,6 +494,9 @@ img{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding-left: 100px;
+    }
+    .content{
+        height: 96%;
     }
     
     
