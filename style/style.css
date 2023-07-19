@@ -86,7 +86,7 @@ ul li a {
 }
 img{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: fill;
 }
 .play-title{
@@ -158,7 +158,7 @@ img{
     max-width: 1000px;
     min-height: 600px;
     grid-template-columns: repeat(4,1fr);
-    margin: 0 auto;
+    margin: 10 auto;
     gap: 5px;
     
 
@@ -174,6 +174,8 @@ img{
 .des-card{
     color: #534c64;
     font-size: 15px;
+    margin-top: 20px;
+    border: 10px solid red;
 }
 .goon{
     background: linear-gradient(#f958b2, #8758f1);
@@ -181,6 +183,7 @@ img{
     -webkit-background-clip: text;
 }
 .des-download{
+    margin-top: 10;
     font-size: 15px;
     width: 350px;
 }
@@ -197,6 +200,10 @@ img{
     display: flex;
     padding: 50px;
     justify-content: center;
+    align-items: center;
+}
+.text{
+    text-align: center;
 }
 .download-image{
     position: relative;
@@ -204,12 +211,13 @@ img{
 }
 .download-img{
     width: 100%;
+    height: 100%;
 }
 .sh-pic{
     height: 150px;
     width: 150px;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: -50px;
 
     
@@ -217,6 +225,34 @@ img{
 .short-pic{
     width: 100%;
 }
+
+
+/*---------------------*/
+.photo-main{
+    margin-bottom: 100px;
+}
+.photocontainer{
+    max-width: 1000px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+
+
+}
+.card1{
+    
+}
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+.favicon{
+    width: 100%;
+}
+
 
 
 
@@ -253,7 +289,6 @@ img{
     .image{
         width: 100%;
         margin-top: 20px;
-        object-fit: fill;
 
     }
     .btn-f{
@@ -275,6 +310,31 @@ img{
     }
     .card-Container{
         grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .card{
+        margin-top: 20px;
+    }
+    
+    .ondownload-container{
+        display: block;
+        height: auto;
+    }
+    .text-container{
+        width: 100%;        
+    }
+    .download-image{
+        width: 70%;
+        margin: 0 auto;
+
+    }
+    .sh-pic{
+        
+    }
+    .photocontainer{
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 20px;
+
     }
     
     
