@@ -6,6 +6,7 @@
 
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .Gamer-Container {
   display: flex;
@@ -474,5 +475,8 @@ img {
   }
   .content {
     height: 96%;
+  }
+  .btn {
+    font-size: 8px;
   }
 }
