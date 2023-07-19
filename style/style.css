@@ -6,6 +6,7 @@
 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .Gamer-Container{
     display: flex;
@@ -256,7 +257,35 @@ img{
 
 
 
-
+.buttonContainer {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.btn_img{
+    height: 30px;
+    width: 30px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding:10px 15px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    font-size: 10px;
+}
+.btn:hover{
+    border: 1px solid red;
+}
 
 
 
@@ -335,6 +364,10 @@ img{
         grid-template-columns: repeat(1,1fr);
         padding-bottom: 20px;
 
+    }
+    .buttonContainer{
+         display: grid;
+        grid-template-columns: repeat(3,1fr); 
     }
     
     
