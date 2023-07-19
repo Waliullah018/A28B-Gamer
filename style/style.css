@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding-top: 30px;
     padding-left:220px;
-    padding-right: 220px;
+    padding-right: 100px;
     
 }
 .logo{
@@ -26,6 +26,11 @@
     font-size: 48px;
     font-weight: 700;
     color: #0B0223;
+}
+.one{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFF;
 }
 .logo img{
     width: 80px;
@@ -234,7 +239,6 @@ img{
 }
 .photocontainer{
     max-width: 1000px;
-    border: 1px solid gray;
     margin: 0 auto;
     min-height: 300px;
     display: grid;
@@ -244,14 +248,30 @@ img{
 
 }
 .card1{
-    
+    position: relative;
 }
 .card1 img {
     width: 100%;
     height: auto;
 }
-.favicon{
-    width: 100%;
+.content{
+    width:100%;
+    height: 89%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+    
+}
+.content:hover{
+    opacity: 0.7;
 }
 
 
@@ -285,6 +305,89 @@ img{
 }
 .btn:hover{
     border: 1px solid red;
+}
+.footer-container{
+    background-color: #0B0223;;
+}
+.gamer-footer{
+    display: flex;
+    justify-content: center;
+}
+.cla{
+    color: #FFF;
+    font-size: 15px;
+}
+.classification{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    padding-left: 10px;
+    margin-top: 40px;
+    
+
+}
+.f-icon{
+    color: white;
+}
+.footer-icon{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.con{
+    color: #FFF;
+    font-size: 10px;
+}
+.condition{
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+.ftb{
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-bottom:20px;
+    text-align: center;
+}
+.palybutton{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:  40%;
+    left: 50%;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.watch{
+    color:red;
+}
+.watch-now{
+    position: absolute;
+    left: 40%;
+    top:50%;
+    display:none;
+}
+.card1:hover .palybutton{
+    display: flex;
+}
+.card1:hover .watch-now{
+    display: flex;
+}
+.card1:hover .favicon{
+    border: 1px solid #f958b2;
+    box-shadow: 2px 2px 4px #f958b2;
+
+
 }
 
 
@@ -369,7 +472,15 @@ img{
          display: grid;
         grid-template-columns: repeat(3,1fr); 
     }
-    
+    .classification{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .condition{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 100px;
+    }
     
     
     
